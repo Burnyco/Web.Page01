@@ -42,7 +42,24 @@
         <img class="Slides" src="./reloaded/8.png" alt="8">
         <img class="Slides" src="./reloaded/9.png" alt="9">
         <img class="Slides" src="./reloaded/10.png" alt="10">
+        <script>
+            var myIndex = 0;
+            letRoll();
 
+            function letRoll() {
+                var i;
+                var x = document.getElementsByClassName("Slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(letRoll, 2000);
+            }
+        </script>
     </div>
     <div class="audio">
         <audio class="music" controls autoplay src="./reloaded/audio.mp4"></audio>
