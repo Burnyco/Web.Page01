@@ -9,3 +9,19 @@ mediaButton.onclick = function() {
     mediaButton.classList.toggle("active");
 
 };
+
+
+var myIndex = 0;
+letRoll();
+
+function letRoll() {
+    var i;
+    var x = document.getElementsByClassName('Slides');
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none'
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = 'block';
+    setInterval(letRoll, 4000);
+}
