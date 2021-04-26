@@ -230,5 +230,5 @@ nav.div.media_button button.active:hover span:nth-of-type(3) {
 
 .audio {
     display: flex;
-    text-overflow: ;
+    text-overflow: 0;
 }
