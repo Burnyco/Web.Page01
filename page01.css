@@ -29,6 +29,12 @@
     position: absolute;
 }
 
+.nav div.logo img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+}
+
 nav div.logo a {
     text-decoration: none;
     color: #fff;
